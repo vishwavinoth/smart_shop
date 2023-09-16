@@ -116,7 +116,7 @@ const Footer = () => {
           />
         </div>
       </Container>
-      <footer className="bg-neutral-200 text-center lg:text-left dark:bg-neutral-700">
+      <footer className="bg-neutral-200 text-center lg:text-left dark:bg-neutral-700 text-center">
         <div className="p-4 text-neutral-700 dark:text-neutral-200">
           © 2023 Copyright:
           <a
