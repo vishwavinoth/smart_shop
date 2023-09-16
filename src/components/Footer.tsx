@@ -25,27 +25,27 @@ const Footer = () => {
             corporis.
           </p>
           <div className="flex items-center gap-x-4">
-            <a href="https://www.youtube.com/@reactjsBD" target="_blank">
+            <a href="https://vishwa.vercel.app/" target="_blank">
               <span className="socialLink">
                 <BsYoutube />
               </span>
             </a>
-            <a href="https://www.youtube.com/@reactjsBD" target="_blank">
+            <a href="https://vishwa.vercel.app/" target="_blank">
               <span className="socialLink">
                 <BsGithub />
               </span>
             </a>
-            <a href="https://www.youtube.com/@reactjsBD" target="_blank">
+            <a href="https://vishwa.vercel.app/" target="_blank">
               <span className="socialLink">
                 <BsLinkedin />
               </span>
             </a>
-            <a href="https://www.youtube.com/@reactjsBD" target="_blank">
+            <a href="https://vishwa.vercel.app/" target="_blank">
               <span className="socialLink">
                 <BsFacebook />
               </span>
             </a>
-            <a href="https://www.youtube.com/@reactjsBD" target="_blank">
+            <a href="https://vishwa.vercel.app/" target="_blank">
               <span className="socialLink">
                 <BsReddit />
               </span>
@@ -116,6 +116,19 @@ const Footer = () => {
           />
         </div>
       </Container>
+      <footer className="bg-neutral-200 text-center lg:text-left dark:bg-neutral-700">
+        <div className="p-4 text-neutral-700 dark:text-neutral-200">
+          © 2023 Copyright:
+          <a
+            href="https://tailwind-elements.com/"
+            className="text-neutral-800 dark:text-neutral-400"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Tailwind Elements
+          </a>
+        </div>
+      </footer>
     </div>
   );
 };
