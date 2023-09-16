@@ -6,6 +6,12 @@ interface Props {
 }
 
 const BannerText = ({ title }: Props) => {
+  const scrollToShop = (distance: number) => {
+    window.scrollTo({
+      top: distance,
+      behavior: "smooth", // Add smooth scrolling behavior
+    });
+  };
   return (
     <div className="hidden lg:inline-block absolute top-0 left-0 w-full h-full">
       <Container className="flex h-full flex-col gap-y-6 justify-center">
@@ -32,10 +38,10 @@ const BannerText = ({ title }: Props) => {
           transition={{ duration: 0.7 }}
           className="flex gap-x-4 mt-2"
         >
-          <button className="py-3 px-6 rounded-full bg-slate-200 hover:bg-white duration-200 text-sm uppercase font-semibold">
+          <button className="py-3 px-6 rounded-full bg-slate-200 hover:bg-white duration-200 text-sm uppercase font-semibold" onClick={() => scrollToShop(600)}>
             Find out more
           </button>
-          <button className="py-3 px-6 rounded-full bg-slate-200 hover:bg-white duration-200 text-sm uppercase font-semibold">
+          <button className="py-3 px-6 rounded-full bg-slate-200 hover:bg-white duration-200 text-sm uppercase font-semibold" onClick={() => scrollToShop(600)}>
             Shop Now
           </button>
         </motion.div>

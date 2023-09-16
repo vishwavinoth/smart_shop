@@ -1,10 +1,10 @@
 "use client";
 import {
-  BsYoutube,
+  BsInstagram,
   BsGithub,
   BsLinkedin,
   BsFacebook,
-  BsReddit,
+  BsTwitter,
 } from "react-icons/bs";
 import payment from "@/images/payment.png";
 import Container from "./Container";
@@ -21,13 +21,12 @@ const Footer = () => {
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa in
             sint incidunt, minima quos voluptates, nobis autem laborum earum est
-            pariatur aperiam. Delectus consectetur maxime quidem veniam,
-            corporis.
+            pariatur aperiam. Delectus consectetur maxime quidem.
           </p>
           <div className="flex items-center gap-x-4">
             <a href="https://vishwa.vercel.app/" target="_blank">
               <span className="socialLink">
-                <BsYoutube />
+                <BsInstagram />
               </span>
             </a>
             <a href="https://vishwa.vercel.app/" target="_blank">
@@ -47,7 +46,7 @@ const Footer = () => {
             </a>
             <a href="https://vishwa.vercel.app/" target="_blank">
               <span className="socialLink">
-                <BsReddit />
+                <BsTwitter />
               </span>
             </a>
           </div>
@@ -59,25 +58,25 @@ const Footer = () => {
               <span className="text-slate hover:text-orange-600 cursor-pointer duration-200">
                 Where Music Is Headed Next
               </span>
-              <span className="text-orange-600">January 31, 2022</span>
+              <span className="text-orange-600">January 31, 2023</span>
             </li>
             <li className="flex flex-col">
               <span className="text-slate hover:text-orange-600 cursor-pointer duration-200">
                 Where Music Is Headed Next
               </span>
-              <span className="text-orange-600">January 31, 2022</span>
+              <span className="text-orange-600">January 31, 2023</span>
             </li>
             <li className="flex flex-col">
               <span className="text-slate hover:text-orange-600 cursor-pointer duration-200">
                 Where Music Is Headed Next
               </span>
-              <span className="text-orange-600">January 31, 2022</span>
+              <span className="text-orange-600">January 31, 2023</span>
             </li>
             <li className="flex flex-col">
               <span className="text-slate hover:text-orange-600 cursor-pointer duration-200">
                 Where Music Is Headed Next
               </span>
-              <span className="text-orange-600">January 31, 2022</span>
+              <span className="text-orange-600">January 31, 2023</span>
             </li>
           </ul>
         </div>
@@ -99,11 +98,13 @@ const Footer = () => {
                 About
               </li>
             </Link>
-            <li className="hover:text-orange-500 cursor-pointer duration-200">
-              Newsletter
-            </li>
+            <Link href="https://vishwa.vercel.app/" target="_blank">
             <li className="hover:text-orange-500 cursor-pointer duration-200">
               Contact
+            </li>
+            </Link>
+            <li className="hover:text-orange-500 cursor-pointer duration-200">
+              Newsletter
             </li>
           </ul>
         </div>
@@ -117,15 +118,15 @@ const Footer = () => {
         </div>
       </Container>
       <footer className="bg-neutral-200 text-center lg:text-left dark:bg-neutral-700">
-        <div className="p-4 text-neutral-700 dark:text-neutral-200 text-center">
-          © 2023 Copyright:
+        <div className="p-2 text-neutral-700 dark:text-neutral-200 text-center">
+          &copy; 2023 Smart Shop. All rights reserved.&nbsp;
           <a
-            href="https://tailwind-elements.com/"
+            href="https://vishwa.vercel.app/"
             className="text-neutral-800 dark:text-neutral-400"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Tailwind Elements
+            vishwa.vercel.app
           </a>
         </div>
       </footer>
