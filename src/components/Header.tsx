@@ -47,7 +47,7 @@ const Header = () => {
   }, [productData]);
 
   return (
-    <div className="bg-bodyColor h-20 top-0 sticky z-50">
+    <div className="bg-bodyColor h-20 top-0 sticky z-50 w-auto">
       <Container className="h-full flex items-center md:gap-x-5 justify-between md:justify-start">
         <Logo />
         {/* Search Field */}
