@@ -48,43 +48,22 @@ const Header = () => {
 
   return (
     <div className="bg-bodyColor h-20 top-0 sticky z-50">
-      <Container className="h-full flex flex-col md:flex-row items-center justify-between md:gap-x-5 md:justify-start">
-        <div className="flex items-center justify-between w-full md:w-auto">
-          <Logo />
-          <div className="md:hidden ml-2">
-            {/* Hamburger menu for mobile */}
-            <button className="p-2 text-gray-500">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                className="h-6 w-6"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
-            </button>
-          </div>
-        </div>
+      <Container className="h-full flex items-center md:gap-x-5 justify-between md:justify-start">
+        <Logo />
         {/* Search Field */}
-        <div className="w-full md:w-auto bg-white hidden md:flex items-center gap-x-1 border-[1px] border-lightText/50 rounded-full px-4 py-1.5 focus-within:border-orange-600 group">
+        <div className="w-full bg-white hidden md:flex items-center gap-x-1 border-[1px] border-lightText/50 rounded-full px-4 py-1.5 focus-within:border-orange-600 group">
           <FiSearch className="text-gray-500 group-focus-within:text-darkText duration-200" />
           <input
             type="text"
             placeholder="Search for products"
-            className="placeholder-text-sm flex-1 outline-none"
+            className="placeholder:text-sm flex-1 outline-none"
           />
         </div>
         {/* Login/Register */}
         {!session && (
           <div onClick={() => signIn()} className="headerDiv cursor-pointer">
             <AiOutlineUser className="text-2xl" />
-            <p className="text-sm font-semibold">Login/Register here</p>
+            <p className="text-sm font-semibold">Login/Register</p>
           </div>
         )}
         {/* Cart button */}
