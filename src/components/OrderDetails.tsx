@@ -6,6 +6,9 @@ import Image from "next/image";
 import FormattedPrice from "./FormattedPrice";
 import { resetOrder } from "@/redux/shoppingSlice";
 import Link from "next/link";
+import {
+  BsFillTrashFill,
+} from "react-icons/bs";
 
 const OrderDetails = () => {
   const dispatch = useDispatch();
@@ -77,6 +80,9 @@ const OrderDetails = () => {
             onClick={() => dispatch(resetOrder())}
             className="mt-5 border-[1px] border-gray-500 py-1 px-4 font-medium rounded-md hover:border-orange-600 cursor-pointer duration-200"
           >
+            <span className="socialLink">
+              <BsFillTrashFill />
+            </span>
             Reset Order
           </button>
         </div>
