@@ -1,7 +1,7 @@
 import { productData } from "@/constants/data";
 
 export const getProducts = async () => {
-  const res = await fetch("https://fakestoreapiserver.reactbd.com/smart");
+  const res = await fetch("https://store-api-server.vercel.app/smart");
   if (!res.ok) {
     throw new Error("Faild to fetch products");
   }
@@ -9,7 +9,7 @@ export const getProducts = async () => {
 };
 export const getTrendingProducts = async () => {
   const res = await fetch(
-    "https://fakestoreapiserver.reactbd.com/smarttrending"
+    "https://store-api-server.vercel.app/smart/smarttrending"
   );
   if (!res.ok) {
     throw new Error("Faild to fetch products");
