@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import Container from "./Container";
 import Logo from "./Logo";
+import testUserImage from "../../public/user.png"
 import { IoMdCart } from "react-icons/io";
 import { FiSearch, FiLogOut } from "react-icons/fi";
 import { AiOutlineUser } from "react-icons/ai";
@@ -81,7 +82,7 @@ const Header = () => {
         {/* user Image */}
         {session && (
           <Image
-          src={session?.user?.image as string || "https://cdn-icons-png.flaticon.com/512/848/848043.png?ga=GA1.1.698859523.1694939688"}
+          src={session?.user?.image as string || testUserImage }
           alt="user image"
             width={50}
             height={50}
