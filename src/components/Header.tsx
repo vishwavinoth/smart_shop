@@ -84,7 +84,7 @@ const Header = () => {
         {!session && (
           <div onClick={() => signIn()} className="headerDiv cursor-pointer">
             <AiOutlineUser className="text-2xl" />
-            <p className="text-sm font-semibold">Login/Register</p>
+            <p className="text-sm font-semibold">Login/Register here</p>
           </div>
         )}
         {/* Cart button */}
