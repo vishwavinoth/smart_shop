@@ -30,7 +30,7 @@ export const options: NextAuthOptions = {
         },
       },
       async authorize(credentials) {
-        const user = { id: "1001", name: "test", password: "test", image: "https://cdn-icons-png.flaticon.com/512/848/848043.png?ga=GA1.1.698859523.1694939688" };
+        const user = { id: "1001", name: "test", password: "test" };
         if (
           credentials?.username === user.name &&
           credentials?.password === user.password
