@@ -81,8 +81,8 @@ const Header = () => {
         {/* user Image */}
         {session && (
           <Image
-            src={session?.user?.image as string}
-            alt="user image"
+          src={session?.user?.image as string || "https://cdn-icons-png.flaticon.com/512/848/848043.png?ga=GA1.1.698859523.1694939688"}
+          alt="user image"
             width={50}
             height={50}
             className="rounded-full object-cover"
