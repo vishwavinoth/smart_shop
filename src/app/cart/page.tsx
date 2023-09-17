@@ -1,5 +1,7 @@
 "use client";
-
+import {
+  BsFillTrashFill,
+} from "react-icons/bs";
 import Container from "@/components/Container";
 import { useDispatch, useSelector } from "react-redux";
 import { StateProps } from "../../../type";
@@ -23,6 +25,9 @@ const CartPage = () => {
                 onClick={() => dispatch(resetCart())}
                 className="bg-red-500 text-base font-semibold text-slate-100 py-2 px-6 hover:bg-red-700 hover:text-white duration-200"
               >
+                <span className="socialLink">
+                <BsFillTrashFill />
+                </span>
                 reset cart
               </button>
             </div>
